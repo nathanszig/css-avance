@@ -1,9 +1,16 @@
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Roboto;
 }
 body{
     background-color: #04293B;
@@ -76,6 +83,9 @@ header nav label{
     width: 80%;
     margin: auto;
 }
+.firstSection img{
+    display: none;
+}
 
 .firstSection .text{
     color: #fff;
@@ -86,11 +96,12 @@ header nav label{
     
 }
 .firstSection .text h2{
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 15px;
+    font-family: Ubuntu;
 }
 .firstSection .text p{
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 .firstSection .text button{
@@ -104,11 +115,31 @@ header nav label{
     border-radius: 20px;
     margin: auto;
 }
-
 #waves{
     width: 100%;
     height: 40vh;
 }
+@media screen and (min-width:1024px){
+    .firstSection .text{
+        text-align:left;
+    }
+    .firstSection .text h2{
+        font-size: 48px;
+    }
+    .firstSection .text p{
+        width: 70%;
+        font-size: 24px;
+    }
+    .firstSection img{
+        display: block;
+    }
+    .firstSection .text button{
+        margin: 0;
+    }
+}
+
+
+
 
 .aboutUs{
     color: #fff;
@@ -120,6 +151,7 @@ header nav label{
 }
 .aboutUs h2{
     font-size: 24px;
+    font-family: Ubuntu;
 }
 .aboutUs img{
     width: 100%;
@@ -130,9 +162,31 @@ header nav label{
 .aboutUs a{
     color: #ECB364;
 }
+@media screen and (min-width:1024px){
+    .aboutUs{
+        width: 85%;
+    }
+    .aboutUs img{
+        width: 45%;
+    }
+    .aboutUs h2{
+        font-size:36px;
+    }
+    .aboutUs .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 18px;
+    }
+    .aboutUs .content .text{
+        width:45%;
+    }
+}
+
 
 .paralax{
-    background-image: url("img/bitcoin.png");
+    background-image: url("img/uriel-sc-11KDtiUWRq4-unsplash.jpg");
 
   /* Set a specific height */
   height: 70vh; 
@@ -161,8 +215,13 @@ header nav label{
 .member h3{
     margin-bottom: 10px;
 }
+.member img{
+    width: 80%;
+}
 .ourteam h2{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-size: 24px;
 }
 
 
@@ -172,14 +231,144 @@ header nav label{
     padding: 50px 0;
     text-align: center;
 }
+.workWith h2{
+    font-family: Ubuntu;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 .workWith .images{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .workWith .images img{
     width: 40%;
-    height: auto;
+    max-width:250px;
+    height:100%;
     margin: 15px;
 
+}
+
+.pricings{
+    padding-bottom: 50px;
+}
+
+.pricings article{
+    width: 250px;
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    padding: 15px;
+    background-color: #064662;
+    margin: 10px;
+}
+.pricings h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-size: 24px;
+}
+.pricings div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricings article h3{
+    color: #ECB364;
+}
+.pricings article span{
+    color: #fff;
+}
+.pricings article .info{
+    display:none;
+}
+@media screen and (min-width:1024px){
+    .pricings article{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pricings article .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        color: #fff;
+    }
+    .pricings article .info li{
+        margin-bottom: 15px;
+    }
+}
+
+.testimonials{
+    padding-bottom: 50px;
+    
+}
+
+.testimonials h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-size: 24px;
+}
+.testimonials .testi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 85%;
+    margin: auto;
+}
+
+.testimonials article{
+    width: 85%;
+    max-width: 350px;
+    background-color:#064662;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    
+}
+.testimonials article p{
+    font-size: 16px;
+}
+.testimonials article div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.testimonials article div img:nth-child(1){
+    width: 25%;
+}
+.testimonials article div img:nth-child(2){
+    width: 70%;
+}
+
+
+footer{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #031C32;
+    border-top: solid 1px;
+}
+footer h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Ubuntu;
+}
+footer .social{
+    width: 70%;
+    max-width: 430px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+footer a{
+    color: #fff;
 }
