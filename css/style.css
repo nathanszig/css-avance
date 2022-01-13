@@ -18,12 +18,21 @@ BACKGROUND-COLOR
 
 */
 
-
+:root{
+    --main-bg-color: #04293B;
+    --cta-color: #ECB364;
+    --secondary-bg-color : #064662;
+    --pricing-starter_entreprise-color : #06466278;
+}
 
 /* FONT */
 @font-face {
     font-family: ubuntu;
-    src: url(fonts/Ubuntu-Regular.ttf);
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 /* END FONT */
 
@@ -39,7 +48,8 @@ BACKGROUND-COLOR
 /* End reset */
 /* BACKGROUND-COLOR */
 body{
-    background-color: #04293B;
+    background-color: var(--main-bg-color);
+    scroll-behavior: smooth;
 }
 /* End background color */
 /* 01 - Header */
@@ -49,7 +59,9 @@ header{
     padding: 20px 20px;
     color: #fff;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top:0;
+    background-color: var(--main-bg-color)
 }
 
 header ul {
@@ -68,7 +80,7 @@ header ul {
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    background-color: #04293B;
+    background-color: var(--main-bg-color);
 }
 header ul li{
 
@@ -121,7 +133,7 @@ header nav label{
         border: none;
     }
     .pricingLink{
-        background-color: #ECB364;
+        background-color: var(--cta-color);
         padding: 5px 10px;
         border-radius: 30px;
         font-weight: bold;
@@ -163,7 +175,7 @@ header nav label{
 .firstSection .text button{
     width: 240px;
     height: 60px;
-    background-color: #ECB364;
+    background-color: var(--cta-color);
     border: none;
     color: #fff;
     font-weight: bold;
@@ -218,7 +230,7 @@ header nav label{
     margin: 15px 0;
 }
 .aboutUs a{
-    color: #ECB364;
+    color: var(--cta-color);
 }
 @media screen and (min-width:1024px){
     .aboutUs{
@@ -245,24 +257,18 @@ header nav label{
 
 /* 04 - Our Team */
 .paralax{
-    background-image: url("img/smart-4168483_1920.jpg");
-
-  /* Set a specific height */
+    background-image: url("../img/ourTeamBg.jpg"); /* Our Team background*/
   
-  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  /* Create the parallax scrolling effect */
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .ourteam{
-    background-color: #04293B;
+    background-color: var(--main-bg-color);
     
     width: 100vw;
     display: flex;
@@ -339,7 +345,7 @@ header nav label{
     justify-content:space-between;
     margin: auto;
     padding: 15px;
-    background-color: #064662;
+    background-color: var(--secondary-bg-color);
     margin: 10px;
     align-items: center;
 
@@ -362,7 +368,7 @@ header nav label{
 }
 
 .pricings article h3{
-    color: #ECB364;
+    color: var(--cta-color);
 }
 .pricings article span{
     color: #fff;
@@ -371,7 +377,7 @@ header nav label{
     display:none;
 }
 .pricings article button{
-    background-color: #ECB364;
+    background-color: var(--cta-color);
     color: #fff;
     padding: 10px 25px;
     width:65%;
@@ -385,7 +391,7 @@ header nav label{
     .pricings article{
         flex-direction: column;
         text-align: center;
-        background:#06466278;
+        background:var(--pricing-starter_entreprise-color);
     }
     .pricings article h3{
         margin-bottom: 15px;
@@ -409,7 +415,7 @@ header nav label{
     }
     .pricings article:nth-child(3){
         box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
-        background-color: #064662;
+        background-color: var(--secondary-bg-color);
         padding: 50px 0;
     }
 }
@@ -439,7 +445,7 @@ header nav label{
 .testimonials article{
     width: 85%;
     max-width: 350px;
-    background-color:#064662;
+    background-color:var(--secondary-bg-color);
     padding: 10px;
     color: #fff;
     text-align: center;
