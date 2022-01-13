@@ -8,36 +8,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Start header -->
     <header>
         <h1>Logo</h1>
+        <!-- Start nav -->
         <nav>
             <label for="burger"><img src="img/menu.svg" alt=""></label>
-            <input type="checkbox" id="burger" name="burger"></input>
+            <input type="checkbox" id="burger" name="burger"/>
+            <!-- Start nav item list -->
             <ul>
+                <!-- Start nav item -->
                 <li><a href="">Home</a></li>
+                <!-- End nav item -->
+                <!-- Start nav item -->
                 <li><a href="">About us</a></li>
+                <!-- End nav item -->
+                <!-- Start nav item -->
                 <li><a href="">Our team</a></li>
+                <!-- End nav item -->
+                <!-- Start nav item -->
                 <li><a href="">Testimonials</a></li>
+                <!-- End nav item -->
+                <!-- Start nav item -->
                 <li><a href="">Partner</a></li>
-                <li><a href="">Pricing</a></li>
+                <!-- End nav item -->
+                <!-- Start nav item -->
+                <li><a href="" class="pricingLink">Pricing</a></li>
+                <!-- End nav item -->
             </ul>
+            <!-- End nav item list -->
         </nav>
+        <!-- End nav -->
     </header>
+    <!-- End header -->
+    <!-- Start main -->
     <main>
+        <!-- Start first section -->
         <section class="firstSection">
+            <!-- Text first section -->
             <div class="text">
                 <h2>Hop on the train of crypto</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
                 <button>Get started</button>
             </div>
-            <img src="img/headimg.png" alt="crypto">
+            <!-- End text first section -->
+            <img src="img/headimg.png" alt="crypto"> <!-- Picture first section -->
             
         </section>
+        <!-- End first section -->
         <img src="img/wave.png" alt="" id="waves">
+        <!-- Start About us -->
         <section class="aboutUs">
             <h2>ABOUT US</h2>
+            <!-- Start content About us -->
             <div class="content">
-                <img src="img/aboutUs.png" alt="">
+                <img src="img/aboutUs.png" alt=""> <!-- Picture About us -->
+                <!-- Text About us -->
                 <div class="text">
                     <span><strong>We help people to get in the future faster</strong></span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -45,33 +71,86 @@
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit</p>
                     <a href="#">more informations -></a>
                 </div>
+                <!-- End text About us -->
             </div>
-            
+            <!-- End content About us -->
         </section>
-        <section class="paralax">
+        <!-- End About us -->
+        <!-- Start Our team -->
+        <section class="paralax"> <!-- Paralax effect -->
             <div class="ourteam">
                 <h2>OUR TEAM</h2>
-                <article class="member">
-                    <img src="img/member.png" alt="">
-                    <h3><strong>Matthieu Casanier</strong></h3>
-                    <p>SEO / CEO</p>
-                </article>
+                <!-- Start all members -->
+                <div class="allMembers">
+                    <!-- Start member -->
+                    <article class="member">
+                        <img src="img/member.png" alt=""> <!-- Member picture -->
+                        <h3><strong>Matthieu Casanier</strong></h3> <!-- Member name -->
+                        <p>SEO / CEO</p> <!-- Member post -->
+                    </article>
+                    <!-- End member -->
+                    <!-- Start member -->
+                    <article class="member">
+                        <img src="img/member.png" alt=""> <!-- Member picture -->
+                        <h3><strong>Matthieu Casanier</strong></h3> <!-- Member name -->
+                        <p>SEO / CEO</p> <!-- Member post -->
+                    </article>
+                    <!-- End member -->
+                    <!-- Start member -->
+                    <article class="member">
+                        <img src="img/member.png" alt=""> <!-- Member picture -->
+                        <h3><strong>Matthieu Casanier</strong></h3> <!-- Member name -->
+                        <p>SEO / CEO</p> <!-- Member post -->
+                    </article>
+                    <!-- End member -->
+                </div>
+                <!-- End all members -->
             </div>
         </section>
+        <!-- End Our Team -->
+        <!-- Start Partners -->
         <section class="workWith">
             <h2>WE WORK WITH</h2>
+            <!-- Image of Partners -->
             <div class="images">
                 <img src="img/partners/coinbase.jpg" alt="">
                 <img src="img/partners/binance.png" alt="">
                 <img src="img/partners/nicehash.jpg" alt="">
             </div>
+            <!-- End image of Partners -->
         </section>
+        <!-- End Partners -->
+        <!-- Start Pricings -->
         <section class="pricings">
             <h2>PRICINGS</h2>
+            <!-- Start all price -->
             <div>
+                
+                <article>
+                    <h3>XXXXX</h3>
+                    <span>XXXXXX</span>
+                    <div class="info">
+                        <!-- Start advantage list -->
+                        <ul>
+                            <li>All limited links</li>
+                            <li>Own analytics platform</li>
+                            <li>Chat support</li>
+                            <li>Number of users</li>
+                            <li>Optimize hashtags</li>
+                            <li>Account manager</li>
+                            <li>Number of articles</li>
+                            <li>Satisfaction guaranteed</li>
+                        </ul>
+                        <!-- End advantage list -->
+                    </div>
+                    <button style="visibility: hidden;">Choose plan</button>
+                </article>
+                
+                <!-- Start price -->
                 <article>
                     <h3>Starter</h3>
                     <span>20 $ / month</span>
+                    <!-- Start information list -->
                     <div class="info">
                         <ul>
                             <li><img src="img/check.png" alt=""></li>
@@ -84,10 +163,15 @@
                             <li><img src="img/check.png" alt=""></li>
                         </ul>
                     </div>
+                    <!-- End information list -->
+                    <button>Choose plan</button>
                 </article>
+                <!-- End price -->
+                <!-- Start price -->
                 <article>
                     <h3>Pro</h3>
                     <span>100 $ / month</span>
+                    <!-- Start information list -->
                     <div class="info">
                         <ul>
                             <li><img src="img/check.png" alt=""></li>
@@ -100,10 +184,15 @@
                             <li><img src="img/check.png" alt=""></li>
                         </ul>
                     </div>
+                    <!-- End information list -->
+                    <button>Choose plan</button>
                 </article>
+                <!-- End price -->
+                <!-- Start price -->
                 <article>
                     <h3>Entreprise</h3>
                     <span>200 $ / month</span>
+                    <!-- Start information list -->
                     <div class="info">
                         <ul>
                             <li><img src="img/check.png" alt=""></li>
@@ -116,48 +205,74 @@
                             <li><img src="img/check.png" alt=""></li>
                         </ul>
                     </div>
+                    <!-- End information list -->
+                    <button>Choose plan</button>
                 </article>
+                <!-- End price -->
             </div>
+            <!-- End all price -->
         </section>
+        <!-- End Pricings -->
+        <!-- Start Testimonials -->
         <section class="testimonials">
             <h2>TESTIMONIALS</h2>
+            <!-- Start all testimonials -->
             <div class="testi">
+                <!-- Start single testimonial -->
                 <article>
+                    <!-- Start picture and star -->
                     <div>
                         <img src="img/circle.png" alt="">
                         <img src="img/stars.png" alt="">
                     </div>
-                    
+                    <!-- End picture and star -->
+                    <!-- Commentaries -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
                 </article>
+                <!-- End single testimonial -->
+                <!-- Start single testimonial -->
                 <article>
+                    <!-- Start picture and star -->
                     <div>
                         <img src="img/circle.png" alt="">
                         <img src="img/stars.png" alt="">
                     </div>
-                    
+                    <!-- End picture and star -->
+                    <!-- Commentaries -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
                 </article>
+                <!-- End single testimonial -->
+                <!-- Start single testimonial -->
                 <article>
+                    <!-- Start picture and star -->
                     <div>
                         <img src="img/circle.png" alt="">
                         <img src="img/stars.png" alt="">
                     </div>
-                    
+                    <!-- End picture and star -->
+                    <!-- Commentaries -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
                 </article>
+                <!-- End single testimonial -->
             </div>
+            <!-- End all testimonials -->
             
         </section>
+        <!-- End Testimonials -->
     </main>
+    <!-- End main -->
+    <!-- Start footer -->
     <footer>
         <h3>Follow us !</h3>
+        <!-- Start social networks -->
         <div class="social">
             <img src="img/facebook.svg" alt="">
             <img src="img/instagram.svg" alt="">
             <img src="img/twitter.svg" alt="">
         </div>
+        <!-- End social networks -->
         <h3>Links</h3>
+        <!-- Start links -->
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About us</a></li>
@@ -166,6 +281,8 @@
             <li><a href="">Pricings</a></li>
             <li><a href="">Testimonials</a></li>
         </ul>
+        <!-- End links -->
     </footer>
+    <!-- End footer -->
 </body>
 </html>
