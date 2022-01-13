@@ -14,16 +14,17 @@ SUMMARY :
 OTHER :
 FONT
 RESET
-BACKGROUND-COLOR
+ALL COLORS
 
 */
-
+/* ALL COLORS */
 :root{
     --main-bg-color: #04293B;
     --cta-color: #ECB364;
     --secondary-bg-color : #064662;
     --pricing-starter_entreprise-color : #06466278;
 }
+/* END ALL COLORS */
 
 /* FONT */
 @font-face {
@@ -46,9 +47,11 @@ BACKGROUND-COLOR
     font-family: Roboto;
 }
 /* End reset */
-/* BACKGROUND-COLOR */
+/* html, body */
 body{
     background-color: var(--main-bg-color);
+}
+html{
     scroll-behavior: smooth;
 }
 /* End background color */
@@ -111,33 +114,7 @@ header nav label{
     transition: 1s;
 }
 @media screen and (min-width:1024px){
-    header nav label{
-        display: none;
-    }
-    header nav{
-        width: 60%;
-        max-width: 600px;
-    }
-    header ul {
-        display: flex;
-        position: initial;
-        transform: translateY(0);
-        flex-direction: row;
-        height: 100%;
-        opacity: 1;
-        width: 100%;
-        align-items: center;
-        
-    }
-    header ul a{
-        border: none;
-    }
-    .pricingLink{
-        background-color: var(--cta-color);
-        padding: 5px 10px;
-        border-radius: 30px;
-        font-weight: bold;
-    }
+    
 }
 /* End header */
 
@@ -188,24 +165,7 @@ header nav label{
     height: 40vh;
 }
 @media screen and (min-width:1024px){
-    .firstSection .text{
-        text-align:left;
-    }
-    .firstSection .text h2{
-        font-size: 48px;
-    }
-    .firstSection .text p{
-        width: 70%;
-        font-size: 24px;
-    }
-    .firstSection img{
-        display: block;
-        max-width: 560px;
-        width: 50%;
-    }
-    .firstSection .text button{
-        margin: 0;
-    }
+    
 }
 
 /* End first Section */
@@ -233,25 +193,7 @@ header nav label{
     color: var(--cta-color);
 }
 @media screen and (min-width:1024px){
-    .aboutUs{
-        width: 85%;
-    }
-    .aboutUs img{
-        width: 45%;
-    }
-    .aboutUs h2{
-        font-size:36px;
-    }
-    .aboutUs .content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        font-size: 18px;
-    }
-    .aboutUs .content .text{
-        width:45%;
-    }
+    
 }
 /* End About us */
 
@@ -298,13 +240,7 @@ header nav label{
     font-size: 24px;
 }
 @media screen and (min-width:1024px){
-    .ourteam{
-        padding: 25px 0;
-    }
-    .paralax{
-        background-attachment: fixed;
-        height: 70vh;
-    }
+    
 }
 /* End Our team */
 
@@ -388,36 +324,7 @@ header nav label{
     margin-top: 15px;
 }
 @media screen and (min-width:1024px){
-    .pricings article{
-        flex-direction: column;
-        text-align: center;
-        background:var(--pricing-starter_entreprise-color);
-    }
-    .pricings article h3{
-        margin-bottom: 15px;
-    }
-    .pricings article .info{
-        display: flex;
-        flex-direction: column;
-        margin-top: 35px;
-        color: #fff;
-    }
-    .pricings article .info li{
-        margin-bottom: 35px;
-    }
-    .pricings article:nth-child(1){
-        display: block;
-        text-align: left;
-        background: none;
-    }
-    .pricings article:nth-child(1) h3, .pricings article:nth-child(1) span{
-        opacity: 0;
-    }
-    .pricings article:nth-child(3){
-        box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
-        background-color: var(--secondary-bg-color);
-        padding: 50px 0;
-    }
+    
 }
 /* End Pricings */
 /* 07 - Testimonials */
@@ -493,3 +400,118 @@ footer a{
     color: #fff;
 }
 /* End footer */
+
+/* MEDIA QUERY screen >= 1024px */
+@media screen and (min-width:1024px){
+    /* Start Header */
+    header nav label{
+        display: none;
+    }
+    header nav{
+        width: 60%;
+        max-width: 600px;
+    }
+    header ul {
+        display: flex;
+        position: initial;
+        transform: translateY(0);
+        flex-direction: row;
+        height: 100%;
+        opacity: 1;
+        width: 100%;
+        align-items: center;
+        
+    }
+    header ul a{
+        border: none;
+    }
+    .pricingLink{
+        background-color: var(--cta-color);
+        padding: 5px 10px;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    /* End Header */
+    /* Start First section */
+    .firstSection .text{
+        text-align:left;
+    }
+    .firstSection .text h2{
+        font-size: 48px;
+    }
+    .firstSection .text p{
+        width: 70%;
+        font-size: 24px;
+    }
+    .firstSection img{
+        display: block;
+        max-width: 560px;
+        width: 50%;
+    }
+    .firstSection .text button{
+        margin: 0;
+    }
+    /* End First section */
+    /* Start About us */
+    .aboutUs{
+        width: 85%;
+    }
+    .aboutUs img{
+        width: 45%;
+    }
+    .aboutUs h2{
+        font-size:36px;
+    }
+    .aboutUs .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        font-size: 18px;
+    }
+    .aboutUs .content .text{
+        width:45%;
+    }
+    /* End About us */
+    /* Start Our team */
+    .ourteam{
+        padding: 25px 0;
+    }
+    .paralax{
+        background-attachment: fixed;
+        height: 70vh;
+    }
+    /* End Our team */
+    /* Start Pricings */
+    .pricings article{
+        flex-direction: column;
+        text-align: center;
+        background:var(--pricing-starter_entreprise-color);
+    }
+    .pricings article h3{
+        margin-bottom: 15px;
+    }
+    .pricings article .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        color: #fff;
+    }
+    .pricings article .info li{
+        margin-bottom: 35px;
+    }
+    .pricings article:nth-child(1){
+        display: block;
+        text-align: left;
+        background: none;
+    }
+    .pricings article:nth-child(1) h3, .pricings article:nth-child(1) span{
+        opacity: 0;
+    }
+    .pricings article:nth-child(3){
+        box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
+        background-color: var(--secondary-bg-color);
+        padding: 50px 0;
+    }
+    /* End Pricings */
+}
