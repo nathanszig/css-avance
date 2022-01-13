@@ -17,3 +17,5 @@ If you want to change the different colors that compose the site you just have t
 ### 2. Content
 To modify the content of your website, you must go to the **index.html** file, you can change all the text and images there.
 Concerning the images, you must remember to save them in the **img/** folder of the template.
+
+Figma : https://www.figma.com/file/Xh0dGAYkv9Ru7rFhq1FsT0/CSS-AVANCE?node-id=15%3A728
